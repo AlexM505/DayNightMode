@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6441a4</color>
+    <color name="colorPrimaryDark">#583795</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="daynight_textColor">#ffff</color>
+    <color name="switchColor">#6441a4</color>
+
+    <color name="splashScreen">#050F1A</color>
+    <color name="text_gray">#575757</color>
+
+    <color name="blue">#2B6DE0</color>
+    <color name="darker_blue">#0D59CA</color>
+</resources>

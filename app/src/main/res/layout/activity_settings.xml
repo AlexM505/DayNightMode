@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".views.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/estandarPadding">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:src="@drawable/placeholder"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:id="@+id/v_indicador"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/estandarPadding">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="@dimen/estandarPadding"
+                    android:src="@drawable/ic_brightness_6_black_24dp"
+                    android:padding="6dp"
+                    android:background="@drawable/circle_purple"/>
+
+                <TextView
+                    android:id="@+id/txtNightMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/estandarPadding"
+                    android:text="Night Mode"
+                    android:textSize="18sp"
+                    android:textColor="@color/daynight_textColor" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchCompat"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:checked="false"
+                    android:padding="@dimen/estandarPadding"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:theme="@style/MySwitch" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layerType="software"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnImei"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/buttons_settings"
+                    android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                    android:padding="@dimen/estandarPadding"
+                    android:paddingStart="16dp"
+                    android:text="ver Imei"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnConection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/buttons_settings"
+                    android:drawableStart="@drawable/ic_wifi_black_24dp"
+                    android:padding="@dimen/estandarPadding"
+                    android:paddingStart="16dp"
+                    android:text="ver Conectividad"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
